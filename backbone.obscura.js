@@ -1,5 +1,5 @@
 (function (root, factory) {
-  if (typeof exports === 'object') {
+  if (typeof exports === 'object' && typeof require === 'function') {
     module.exports = factory(require('underscore'), require('backbone'));
   }
   else if (typeof define === 'function' && define.amd) {
